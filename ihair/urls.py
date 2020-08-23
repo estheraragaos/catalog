@@ -5,6 +5,8 @@ from ihair.catalog import views
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
+router.register(r'categories', views.CategoryViewSet)
+
 
 urlpatterns = [
     path('', include(router.urls)),
