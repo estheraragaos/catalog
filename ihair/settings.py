@@ -28,8 +28,10 @@ INSTALLED_APPS = [
 
     #third-party
     'rest_framework',
-]
 
+    # #created
+    'ihair.catalog',
+]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

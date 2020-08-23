@@ -1,5 +1,5 @@
 from django.contrib.auth.models import User, Group
-from ihair.catolog.models import Product, Category
+from ihair.catalog.models import Category, Product
 from rest_framework import serializers
 
 class ProductSerializer(serializers.HyperlinkedModelSerializer):
