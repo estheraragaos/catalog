@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class CatologoConfig(AppConfig):
-    name = 'catologo'
+class CatologConfig(AppConfig):
+    name = 'catolog'
