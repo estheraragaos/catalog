@@ -14,7 +14,7 @@ class CategoryList(generics.ListCreateAPIView):
 
 class CategoryDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Category.objects.all()
-    serializer_class = CategorySerializer   
+    serializer_class = CategorySerializer
 
 
 class ProductList(generics.ListCreateAPIView):
@@ -26,4 +26,4 @@ class ProductList(generics.ListCreateAPIView):
 
 class ProductDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Product.objects.all()
-    serializer_class = ProductSerializer  
+    serializer_class = ProductSerializer
