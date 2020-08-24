@@ -1,11 +1,13 @@
 from django.contrib.auth.models import User, Group
 from ihair.catalog.models import Category, Product
-from rest_framework import permissions, generics
+from rest_framework import permissions, generics, filters
 from ihair.catalog.serializers import UserSerializer, GroupSerializer, CategorySerializer, ProductSerializer
 
 class CategoryList(generics.ListCreateAPIView):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
+    filter_backends = [filters.SearchFilter]
+    search_fields = ['name']
 
 class CategoryDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Category.objects.all()
