@@ -1,1 +1,1 @@
-# cat-logo-iHair
+# Catalog
