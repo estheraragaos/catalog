@@ -69,7 +69,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'db.sqlite3'
+    }
 }
+
 
 
 # Password validation
@@ -116,6 +118,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 try:
-    from local_settings import *
+    from ihair.local_settings import *
 except ImportError:
     pass
