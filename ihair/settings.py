@@ -8,13 +8,12 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'h3vkl=ldln-flis54v5_r001ul$*)8vul%xr=q#b0ydt4*jbl6'
+SECRET_KEY = "replace this with a real secret key"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 INSTALLED_APPS = [
@@ -28,9 +27,10 @@ INSTALLED_APPS = [
     #third-party
     'rest_framework',
 
-    # #created
+    #created
     'ihair.catalog',
 ]
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
